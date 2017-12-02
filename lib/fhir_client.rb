@@ -25,6 +25,3 @@ require_relative File.join('.','model','bundle.rb')
 require_relative File.join('.','model','client_reply.rb')
 require_relative File.join('.','model','tag.rb')
 require_relative File.join('.','model','parameters.rb')
-
-mongo_config = File.join(root, "config/mongoid.yml")
-Mongoid.load!(mongo_config, :test) unless (Mongoid.configured? || !File.exists?(mongo_config))
